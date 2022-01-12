@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: sugnanikubernetes
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 8080 
+    selector:
+        app: sugnanikubernetes
